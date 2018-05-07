@@ -1,4 +1,4 @@
-@font-face {
+font-face {
   font-family: 'IBM Plex Sans';
   font-weight: 200;
   font-style: normal;
@@ -31,7 +31,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
+  margin:auto;
   width: 960px;
 }
 
@@ -50,7 +50,7 @@ b {
 
 header {
   display: -ms-flexbox;
-  display: flex;
+  display: center;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 36px;
@@ -58,6 +58,9 @@ header {
 }
 
 header .fa-map {
+  position: fixed;
+  margin-left: 206px;
+  padding-bottom: 36px;
   width: 60px;
   text-align: center;
 }
@@ -68,13 +71,27 @@ header a {
 }
 
 header h1 {
-  margin-left: 20px;
-  width: 860px;
+  margin-left: 250px;
+  width: 934px;
+  height: 46px;
+  font-size: 26px;
   text-align: center;
+}
+div header {
+  text-align: center;
+  margin:auto;
+  width: 80px
+  color: #f5a3b0;
+}
+header h2{
+  font-size: 36px;
+  font-weight: 700px;
+  text-align: center;
+  margin-left: 110PX;
 }
 
 .map-page header {
-  padding: 0;
+  padding: 10;
   height: 112px;
 }
 
@@ -94,7 +111,9 @@ header h1 {
 }
 
 nav {
+  /* position: */
   width: 80px;
+  height: 280px;
 }
 
 nav li {
@@ -118,8 +137,8 @@ nav li a:hover::before {
 }
 
 nav li.current a::before {
-  width: 0;
-  height: 0;
+  width: 60;
+  height: ;
   content: '';
   border-top: 20px solid transparent;
   border-right: 20px solid transparent;
@@ -263,11 +282,34 @@ nav li:nth-child(7) a:hover::before {
   border-left: 20px solid transparent;
   border-left-color: #f79cd0;
 }
-
-main {
+main P {
   background-color: #e3e3e3;
   padding-top: 46.4px;
   width: 860px;
+  height: 230px;
+}
+ main img{
+  text-align: center;
+  padding-top: 78px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /* height: 1054px; */
+}
+.Pink{background-color: #f5a3b0;}
+.Blue{background-color: #9cc5d7;}
+.Yellow{background-color: #f7f3ac;}
+.Purple{background-color: #c6a2f5;}
+.Green{background-color: #9cd7ab;}
+.Orange{background-color: #f7d5a7;}
+.magenta{background-color: #f79cd0;}
+div img {
+  text-align: center;
+  width: 700PX;
+  height:
+  padding-top: 80;
+  padding-bottom: 80px;
+
 }
 
 main p {
@@ -282,31 +324,71 @@ main ul {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 80px;
-  counter-reset: listStyle;
+  counter-reset: inheritlifestyle;
+
 }
 
 main li {
   counter-increment: listStyle;
 }
 
-main li::before {
+main li:before {
   font-weight: 700;
   content: counter(listStyle, upper-alpha);
 }
 
-picture {
+img {
   display: block;
-  padding-bottom: 80px;
-  text-align: center;
+  padding-bottom: 38px;
 }
-
 picture img {
   padding-top: 80px;
 }
-
-picture.nineteen-forty {
-  background-color: #f5a3b0;
+/* Legend */
+legend{
+  width:704px;
+  max-width: 704px;
+  margin:0 auto;
+  vertical-align:top;
+  background-color:#f0f0f0;
+  padding:78px;
+  display:inline-table;
 }
+legend ol {
+  list-style-type:upper-latin;
+  width: calc(99% / 2);
+  max-width:100%;
+  display:inline-block;
+  vertical-align:top;
+}
+legend ol li:before {
+  content:"\2022";
+  color:#B7B7B7;
+}
+/* legend ul li {
+  line-height: 12px; */
+
+}
+legend ol li {
+  font-weight:bold;
+  line-height:35px;
+}
+legend ul {
+
+  margin-left:15px;
+}
+legend ul li:before {
+  content:"\2014";
+  color:#000;
+  /* line-height: 25px; */
+}
+legend ul li {
+  font-weight:normal;
+  line-height: 16px;
+}
+/* picture.nineteen-forty {
+  background-color: #f5a3b0;
+  }
 
 picture.nineteen-fifty-six {
   background-color: #9cc5d7;
@@ -338,4 +420,4 @@ picture.nineteen-eighty {
 
 .map-page main {
   padding-top: 0;
-}
+} */
