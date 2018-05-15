@@ -60,7 +60,7 @@ header {
 header .fa-map {
   position: fixed;
   margin-left: 206px;
-  padding-bottom: 36px;
+  padding-bottom: 10px;
   width: 60px;
   text-align: center;
 }
